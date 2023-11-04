@@ -1,0 +1,24 @@
+/* Define the man's icon */
+.man-icon {
+    background-image: url('man.png'); /* Replace with the path to the man image */
+    width: 50px;
+    height: 50px;
+    background-size: 100% 100%;
+    transform-origin: center bottom;
+    transition: transform 0.2s;
+}
+
+/* CSS animation to rotate the man icon */
+@keyframes rotateMan {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Apply the animation to the man's icon */
+.man-icon.rotating {
+    animation: rotateMan 2s linear infinite;
+}
